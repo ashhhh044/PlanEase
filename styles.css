@@ -13,7 +13,14 @@
     position: relative;
     overflow-x: hidden;
   }
-  
+  a:link, a:visited {
+    text-decoration: none;
+    color: #457B9D;
+    cursor: pointer;
+}
+a:hover{
+  box-shadow: 0 0 1px #1D3557;
+}
   /* 2. Navbar */
   .navbar {
     display: flex;
@@ -82,7 +89,7 @@
   }
   
   /* 4. Add-task section */
-  .add-task {
+  .add-task{
     margin: 4rem auto 0;
     width: 80%;
     max-width: 600px;
@@ -222,7 +229,7 @@
     align-items: center;
     width: 36%;
     max-width: 400px;
-    margin: 5rem auto 0;
+    margin: 2rem auto 0;
     background-color: #457B9D;
     border-radius: 16px;
   }
