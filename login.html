@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <section class="background">
-        <div class="circle-first"></div>
-        <div class="circle-second"></div>
-        <div class="circle-third"></div>
-        <div class="circle-fourth"></div>
-    </section>
+  <section class="background">
+    <div class="circle-first"></div>
+    <div class="circle-second"></div>
+    <div class="circle-third"></div>
+    <div class="circle-fourth"></div>
+  </section>
 
-    <div class="login-form">
-        <p class="login-header">Login</p>
-        <input type="text" placeholder="Email/Username" class="login-detail"/>
-        <input type="password" placeholder="Password" class="login-detail"/>
-        <input type="submit" value="Login" class="login-button"/>
-        <p>Forgot Password?</p>
-        <p>Not Registered? <a href="signin.html">Sign Up Here</a></p>       
-    </div>
-    
+  <form class="login-form" action="" method="POST" onsubmit="return validateLoginForm()">
+    <p class="login-header">Login</p>
+
+    <label for="username" style="display:none;">Username or Email</label>
+    <input
+      type="text"
+      id="username"
+      name="username"
+      placeholder="Email/Username"
+      class="login-detail"
+      required
+    />
+
+    <label for="password" style="display:none;">Password</label>
+    <input
+      type="password"
+      id="password"
+      name="password"
+      placeholder="Password"
+      class="login-detail"
+      required
+    />
+
+    <input type="submit" value="Login" class="login-button" />
+
+    <p><a href="#">Forgot Password?</a></p>
+    <p>Not Registered? <a href="signin.html">Sign Up Here</a></p>
+  </form>
+
+  <script src="login.js"></script>
 </body>
 </html>
